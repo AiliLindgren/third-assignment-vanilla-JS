@@ -10,7 +10,7 @@ body {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: rgb(77, 172, 172);
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -20,8 +20,10 @@ body {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   font-size: 25px;
-  color: #818181;
+  color: black;
   display: block;
   transition: 0.3s;
 }
@@ -64,7 +66,7 @@ body {
   color: black;
   border: none;
   border-radius: 4px;
-  background-color: rgb(54, 172, 172);
+  background-color: rgb(23, 124, 124);
   transition: 0.3s ease-in-out;
 }
 
@@ -83,7 +85,7 @@ h1 {
 
 p {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 25px;
   font-style: normal;
   max-width: 800px;
@@ -147,6 +149,43 @@ h3 {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: rgb(54, 172, 172);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker color */
+input[type="submit"]:hover {
+  background-color: rgb(23, 124, 124);
+  transition: 0.3s ease-in-out;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
